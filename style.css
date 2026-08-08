@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0a0a0a;
+  color: white;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #1a0033, #0d0d0d);
+  border-bottom: 2px solid purple;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, purple, #6a0dad);
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  border: 3px solid orange;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.avatar-hint {
+  font-size: 11px;
+  color: #aaa;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+h1 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.titre {
+  color: orange;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.localisation {
+  color: #aaa;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.header-btns {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.header-btns a {
+  background: purple;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+section {
+  padding: 25px 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: orange;
+  font-size: 20px;
+  margin-bottom: 15px;
+  border-left: 4px solid purple;
+  padding-left: 10px;
+}
+
+.carte {
+  background: #1a1a2e;
+  border: 1px solid purple;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.carte p {
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.carte strong {
+  color: orange;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 12px 0;
+  border-bottom: 1px solid #333;
+}
+
+.timeline-item:last-child {
+  border-bottom: none;
+}
+
+.badge {
+  font-size: 24px;
+  min-width: 40px;
+  text-align: center;
+}
+
+.timeline-item h3 {
+  color: white;
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+.timeline-item p {
+  color: #aaa;
+  font-size: 13px;
+}
+
+.service-carte {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.service-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.service-carte h3 {
+  color: orange;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.service-carte ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service-carte ul li {
+  color: #ccc;
+  font-size: 14px;
+  padding: 6px 0;
+  border-bottom: 1px solid #333;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.service-carte ul li:last-child {
+  border-bottom: none;
+}
+
+.service-carte ul li::before {
+  content: "— ";
+  color: orange;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+.contact-item span {
+  font-size: 20px;
+  min-width: 30px;
+}
+
+.contact-item p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.contact-item a {
+  color: orange;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 20px;
+  border-top: 1px solid purple;
+  background: #0a0a0a;
+}
+
+.footer-titre {
+  color: orange;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.footer-copy {
+  color: #666;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.footer-liens {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-liens a {
+  color: #aaa;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.footer-liens a:hover {
+  color: orange;
+}
