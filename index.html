@@ -3,23 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ATCHOU Olivier — Portfolio</title>
+  <title>ATCHOU Olivier — Portfolio</title> 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
   <div class="header-content">
-    <div class="avatar" id="avatar">
-      <span id="avatar-texte">OA</span>
-      <img id="avatar-img" src="" style="display:none;" />
+    <div class="avatar">
+  <img src="https://i.ibb.co/Qj11yNft/photo.jpg" 
+  style="width:100%; height:100%; 
+  object-fit:cover; border-radius:50%;" />
     </div>
-    
-    <input type="file" id="inputPhoto" 
-    accept="image/*" style="display:none;" />
     <h1>ATCHOU Olivier</h1>
     <p class="titre">⚡ Électricien Bâtiment & 🎨 Créateur de Contenu</p>
-    <p class="localisation">📍 Cotonou, Bénin</p>
+    <p class="localisation"> Cotonou, Bénin</p>
     <div class="header-btns">
       <a href="https://wa.me/2290152353448" target="_blank">
       💬 WhatsApp</a>
@@ -30,7 +28,7 @@
 </header>
 
 <section>
-  <h2>👤 À propos de moi</h2>
+  <h2>★ À propos de moi</h2>
   <div class="carte">
     <p>Je suis <strong>ATCHOU Olivier</strong>, né le 
     <strong>6 décembre 2004</strong> au Bénin. 
@@ -46,28 +44,28 @@
   <h2>🎓 Formation & Diplômes</h2>
   <div class="carte">
     <div class="timeline-item">
-      <span class="badge">📜</span>
+      <span class="badge">•</span>
       <div>
         <h3>CEP</h3>
         <p>Certificat d'Études Primaires</p>
       </div>
     </div>
     <div class="timeline-item">
-      <span class="badge">📜</span>
+      <span class="badge">•</span>
       <div>
         <h3>BEPC</h3>
         <p>Brevet d'Études du Premier Cycle</p>
       </div>
     </div>
     <div class="timeline-item">
-      <span class="badge">🎖️</span>
+      <span class="badge">•</span>
       <div>
         <h3>Certificat Live Streaming</h3>
         <p>Maîtrisez le Live Streaming pour les cultes</p>
       </div>
     </div>
     <div class="timeline-item">
-      <span class="badge">⚡</span>
+      <span class="badge">~</span>
       <div>
         <h3>Formation Électricité Bâtiment</h3>
         <p>En cours de formation professionnelle</p>
@@ -77,7 +75,7 @@
 </section>
 
 <section>
-  <h2>🛠️ Mes Services</h2>
+  <h2>★ Mes Services</h2>
   
   <div class="carte service-carte">
     <div class="service-icon">⚡</div>
@@ -95,8 +93,7 @@
     <h3>Création Visuelle</h3>
     <ul>
       <li>Création d'affiches personnalisées</li>
-      <li>Flyers et visuels réseaux sociaux</li>
-      <li>Cartes de visite</li>
+      
       <li>Communication visuelle professionnelle</li>
     </ul>
   </div>
@@ -184,28 +181,7 @@
   </div>
 </footer>
 
-<script>
-document.getElementById("avatar")
-.addEventListener("click", function() {
-  document.getElementById("inputPhoto").click();
-});
 
-document.getElementById("inputPhoto")
-.addEventListener("change", function(e) {
-  let fichier = e.target.files[0];
-  if (fichier) {
-    let lecteur = new FileReader();
-    lecteur.onload = function(ev) {
-      let img = document.getElementById("avatar-img");
-      let texte = document.getElementById("avatar-texte");
-      img.src = ev.target.result;
-      img.style.display = "block";
-      texte.style.display = "none";
-    };
-    lecteur.readAsDataURL(fichier);
-  }
-});
-</script>
 
 </body>
   </html>
